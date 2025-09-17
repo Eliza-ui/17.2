@@ -1,0 +1,140 @@
+/* Importing Quicksand font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+/* Basic reset to remove default padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define Color Variables */
+:root {
+    --primary-color: #D5006D; /* Dark Pink (Primary Color) */
+    --secondary-color: #4A90E2; /* Light Blue (Secondary) */
+    --complementary-color: #2A7D7F; /* Teal (Complementary) */
+    --dark-color: #333; /* Dark Text Color */
+    --light-color: #fff; /* White / Light Color */
+    --background-color: #FFB6C1; /* Light Pink Background Color */
+}
+
+/* Set the background color for the whole page */
+html, body {
+    height: 100%;
+    background-color: var(--background-color); /* Light Pink */
+}
+
+/* Body styling */
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color); /* Dark text color */
+    padding: 40px; /* Larger padding around the body */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full height of the viewport */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: var(--primary-color); /* Dark Pink */
+    color: var(--light-color); /* White text on dark pink */
+    padding: 40px; /* Larger padding for more spacing */
+    border-radius: 8px;
+    margin-bottom: 40px; /* Increased bottom margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3rem; /* Increased font size for emphasis */
+}
+
+/* Main Section Styling */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Increased gap between sections */
+}
+
+section {
+    background-color: var(--light-color); /* White background for content area */
+    color: var(--dark-color); /* Dark text for readability */
+    padding: 30px; /* Adjusted padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+section ol, section ul {
+    margin-left: 30px; /* Larger left margin */
+    margin-bottom: 30px; /* Increased margin for separation */
+}
+
+section ol li, section ul li {
+    margin-bottom: 15px; /* Increased bottom margin for items */
+}
+
+/* Link Styling */
+a {
+    color: var(--secondary-color); /* Light blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Image Centering */
+center {
+    display: block;
+    margin: 40px auto; /* Increased margin for image centering */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 30px; /* Increased padding for footer */
+    background-color: var(--primary-color); /* Dark Pink */
+    color: var(--light-color); /* White text on dark pink */
+    margin-top: 40px; /* Increased margin between content and footer */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-links {
+    list-style-type: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Increased gap between social icons */
+}
+
+footer .social-links li {
+    display: inline;
+}
+
+footer .social-links a {
+    color: var(--light-color); /* White text for social icons */
+    font-size: 1.5rem; /* Larger font size for social icons */
+}
+
+footer .social-links a:hover {
+    color: var(--secondary-color); /* Light blue on hover */
+}
+
+/* Specific Styling for Text Content */
+strong {
+    color: var(--complementary-color); /* Teal color for strong text */
+}
